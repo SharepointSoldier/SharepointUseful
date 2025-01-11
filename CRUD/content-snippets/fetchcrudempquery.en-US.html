@@ -1,0 +1,28 @@
+<fetch top="50">
+  <entity name="cr935_crudemp">
+    <attribute name="cr935_name" />
+    <attribute name="cr935_email" />
+  </entity>
+</fetch>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for record in crudemp.results %}
+    <tr>
+      <td>{{ record['cr935_name'] }}</td>
+      <td>{{ record['cr935_email'] }}</td>
+    </tr>
+    
+    <tr>
+      <td colspan="2">No data found.</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

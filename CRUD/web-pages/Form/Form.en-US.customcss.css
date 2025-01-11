@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .submit-box {
+    width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  .online-app {
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .text h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .text p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0 0;
+  }
+  
+  .create-proposal-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffb700;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .create-proposal-btn:hover {
+    background-color: #e6a500;
+  }
+  
+  .note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .note a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .note a:hover {
+    text-decoration: underline;
+  }
+  

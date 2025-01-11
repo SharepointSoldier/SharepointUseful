@@ -1,0 +1,102 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Container to hold sidebar and content */
+.container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #f4f4f4;
+  border-right: 1px solid #ddd;
+  position: fixed; /* Static sidebar */
+  top: 0;
+  bottom: 0;
+  overflow-y: auto; /* Scrollable if content exceeds height */
+  padding: 20px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin: 10px 0;
+  position: relative;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar-link:hover {
+  color: #007bff;
+}
+
+/* Vertical Yellow Line for Selected Tab */
+.sidebar-link.active {
+  color: #007bff;
+}
+
+.sidebar-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: yellow;
+  border-radius: 5px;
+}
+
+/* Content */
+.content {
+  margin-left: 250px; /* Same width as the sidebar */
+  padding: 20px;
+  overflow-y: auto; /* Allow content scrolling */
+  height: 100vh; /* Full height */
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #007bff;
+  color: #fff;
+}

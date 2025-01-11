@@ -1,0 +1,55 @@
+<div class="row sectionBlockLayout text-start" style="min-height: auto; padding: 8px;">
+  <div class="container" style="display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="padding: 16px; margin: 60px 0px; min-height: 200px;"></div>
+    <div>
+      <div>
+        {% editable snippets 'CurdEmp' %}
+      </div>
+    </div>
+  </div>
+
+
+  <!--         
+        {% fetchxml myFetch %}
+        <fetch>
+          <entity name="systemuser">
+            <attribute name="fullname" />
+            <attribute name="systemuserid" />
+            <filter>
+              <condition attribute="internalemailaddress" operator="eq" value="Janvi.v@spsoldier.onmicrosoft.com" />
+            </filter>
+          </entity>
+        </fetch>
+        {% endfetchxml %}
+        {% assign fetchResult = myFetch.results.entities %}
+        {% if fetchResult.size > 0 %}
+          <p>Number of records found: {{ fetchResult.size }}</p>
+          {% for user in fetchResult %}
+            <p>User ID: {{ user.systemuserid }}</p>
+            <script>
+              let  user={};
+              let varuser="{{ user.systemuserid }} ";
+              console.log(varuser);
+             </script>
+            <p>User Name: {{ user.fullname }}</p>
+          {% endfor %}
+        {% else %}
+          <p>No records found.</p>
+        {% endif %} -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <button class="download-all">
+          <span class="icon"></span>
+          Download All
+        </button>
+        

@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F4F4F4;
+}
+
+/* Header styling */
+.header {
+  background-color: #2E472E; /* Dark green */
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.nav-item.active {
+  border-bottom: 3px solid #FFC107; /* Yellow underline */
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+/* Content section with background */
+.content {
+  background: linear-gradient(to right, rgba(46, 71, 46, 0.9), rgba(46, 71, 46, 0.8)), 
+              url('forest-background.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.breadcrumb-link {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  color: white;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.status-info {
+  margin-top: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.status-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.status-draft {
+  background-color: #ddd;
+  color: black;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.separator {
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.date-submitted {
+  color: #ddd;
+}
+
+/* Button section styling */
+.button-section {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.tab-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: green;
+  color: white;
+}
+
+.tab-button:hover {
+  background-color: #FFC107;
+}
+
+/* Main content section */
+.main-content {
+  background-color: white;
+  padding: 20px 30px;
+  margin: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  background-color: #E6E6E6;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.action-button i {
+  font-size: 16px;
+}
+
+.action-button:hover {
+  background-color: #FFC107;
+}
+
+.edit-button {
+  background-color: #FFC107;
+  color: black;
+}
+
+.section-divider {
+  margin-top: 10px;
+  height: 2px;
+  background-color: #FFC107;
+}
+
+/* Sidebar and details section */
+.details-container {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 20%;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-item {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sidebar-item.active {
+  border-left: 4px solid #FFC107;
+}
+
+.details-content {
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.details-table td {
+  padding: 10px;
+  }

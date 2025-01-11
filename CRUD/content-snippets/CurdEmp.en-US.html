@@ -1,0 +1,32 @@
+{% fetchxml myFetch %}
+        <fetch>
+          <entity name="cr935_crudemp">
+            <attribute name="cr935_name" />
+            <attribute name="cr935_email" />
+            <attribute name="cr935_phonenumber" />
+            <attribute name="cr935_age" />
+          </entity>
+        </fetch>
+        {% endfetchxml %}
+
+        {% assign fetchResult = myFetch.results.entities %}
+        <table>
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone Number</th>
+                  <th>Age</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% for record in fetchResult %}
+              <tr>
+                  <td>{{ record.cr935_name }}</td>
+                  <td>{{ record.cr935_email }}</td>
+                  <td>{{ record.cr935_phonenumber }}</td>
+                  <td>{{ record.cr935_age }}</td>
+              </tr>
+              {% endfor %}
+   </tbody>
+      </table>
