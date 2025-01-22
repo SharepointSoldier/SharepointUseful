@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+   
+  .form-section {
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+   
+  .required-text {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+   
+  .upload-box {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+  }
+   
+  .upload-box h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc; /* Added border directly under the title */
+  }
+   
+  .optional-text {
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    margin-left: 8px;
+  }
+   
+  .upload-description {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+   
+  .file-requirements {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0px;
+  }
+   
+  .required-symbol {
+    color: red;
+    font-weight: bold;
+    margin-right: 3px;
+  }
+   
+  .info-box {
+    background-color: #e7f4ff;
+    color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-right: 1950px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #b3d7ff;
+  }
+   
+  .info-icon {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+   
+  .upload-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-right: 1950px;
+  }
+   
+  .upload-area p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+  }
+   
+  .select-files {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    border-color: white;
+  }
+   
+  .select-files:hover {
+    background-color: #007bff;
+    color: white;
+  }
+   
