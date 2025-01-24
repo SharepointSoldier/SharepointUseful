@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f9f9f9;
+            border-right: 1px solid #ddd;
+            padding: 15px;
+            overflow-y: auto;
+        }
+
+        .sidebar h3 {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .file-section h4 {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .file-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .file-section ul li {
+            font-size: 12px;
+            color: #007bff;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .file-section ul li:hover {
+            text-decoration: underline;
+        }
+
+        .viewer {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+        }
+
+        .viewer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .viewer-header span {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .viewer-header .controls {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .controls button {
+            font-size: 12px;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+
+        .controls button:hover {
+            background-color: #e2e2e2;
+        }
+
+        .viewer-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .viewer-content img {
+            max-width: 100%;
+            max-height: 100%;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding: 10px 20px;
+            border-top: 1px solid #ddd;
+            background-color: #f1f1f1;
+        }
+
+        .download-buttons button {
+            font-size: 12px;
+            padding: 5px 15px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .download-buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>AVAILABLE FILES</h3>
+            <div class="file-section">
+                <h4>Maps</h4>
+                <ul>
+                    <li>Map01.pdf</li>
+                </ul>
+            </div>
+            <div class="file-section">
+                <h4>Eligible Entity</h4>
+                <ul>
+                    <li>Entity01.pdf</li>
+                </ul>
+            </div>
+            <div class="file-section">
+                <h4>Non-profit-doc.pdf</h4>
+                <ul>
+                    <li>Document01.pdf</li>
+                </ul>
+            </div>
+        </div>
+        <div class="viewer">
+            <div class="viewer-header">
+                <span>Map01.pdf</span>
+                <div class="controls">
+                    <button>Page 1</button>
+                    <button>100%</button>
+                    <button>Zoom In</button>
+                    <button>Zoom Out</button>
+                </div>
+            </div>
+            <div class="viewer-content">
+                <img src="map-placeholder.png" alt="Map Viewer">
+            </div>
+            <div class="download-buttons">
+                <button>Download All Files</button>
+                <button>Download Proposal</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
