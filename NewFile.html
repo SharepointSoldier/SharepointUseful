@@ -92,6 +92,30 @@
   </div>
 </body>
 </html>
+
+
+<div class="eligibility-section">
+    <h2 class="eligibility-title">Eligibility Verification</h2>
+    <hr class="title-underline" />
+    <div class="eligibility-content">
+      <div class="eligibility-check">
+        <span class="check-icon">✔</span>
+        <div class="eligibility-text">
+          <p class="eligibility-main">
+            Your private forest land is eligible to apply to the program.
+          </p>
+          <p class="eligibility-sub">
+            Please proceed with filling out your project proposal and submit it for funding by the application deadline of <strong>January 12th, 2024.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="continue-section">
+    <button class="continue-button">Continue to Application &rarr;</button>
+  </div>
+
+
 <style>
     body {
     font-family: Arial, sans-serif;
@@ -184,4 +208,101 @@
     text-align: right;
   }
   
+
+
+
+  body, h2, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  .eligibility-section {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    height: 485px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+   
+  .eligibility-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+  }
+   
+  .title-underline {
+    border: none;
+    border-top: 2px solid #f2c94c; /* Yellow underline */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+   
+  .eligibility-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+   
+  .eligibility-check {
+    display: flex;
+    align-items: center;
+  }
+   
+  .check-icon {
+    font-size: 24px;
+    color: #27ae60; /* Green check icon */
+    margin-right: 10px;
+  }
+   
+  .eligibility-text {
+    max-width: 600px;
+  }
+   
+  .eligibility-main {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+   
+  .eligibility-sub {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+  }
+  /* General styles */
+  .continue-section {
+    background-color: #fdf7e6; /* Light cream background */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    align-items: center;
+    border-top: 1px solid #e0e0e0; /* Subtle top border */
+  }
+   
+  .continue-button {
+    background-color: #2e7d32; /* Green background */
+    color: #ffffff; /* White text */
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 50px;
+  }
+   
+  .continue-button:hover {
+    background-color: #1b5e20; /* Darker green on hover */
+  }
+   
+  .continue-button:focus {
+    outline: 2px solid #f2c94c; /* Yellow outline for accessibility */
+  }
+   
 </style>
