@@ -306,3 +306,16 @@
   }
    
 </style>
+<script>
+    document.getElementById('continueButton').addEventListener('click', function() {
+    const formWrapper = document.querySelector('.eligible-form-wrapper');
+    const eligibilitySection = document.querySelector('.eligibility-section');
+
+    // Hide the eligible-form-wrapper div
+    formWrapper.style.display = 'none';
+
+    // Show the eligibility-section div
+    eligibilitySection.style.display = 'block';
+});
+
+</script>
