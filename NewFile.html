@@ -7,123 +7,133 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Community Forest and Open Space Conservation Program Application</h1>
-      <p>
-        Verify if the proposed private forest land project is eligible for funding. If you have any questions, please contact your 
-        <a href="#">Regional Program Manager</a> or refer to the <a href="#">Final Rule (PDF)</a>.
-      </p>
-    </div>
+  <div class="form-wrapper">
+    <h1 class="form-heading">Community Forest and Open Space Conservation Program Application</h1>
+    <p class="form-intro">
+      Verify that the proposed private forest land project meets the program's eligibility criteria. If you have questions, please
+      contact your <a href="#" class="hyperlink">Regional Program Manager</a> or refer to the <a href="#" class="hyperlink">Final Rule (PDF)</a>.
+    </p>
+
     <form>
-      <div class="form-group">
-        <label for="entityType">What type of entity is your organization?</label>
-        <select id="entityType" class="dropdown">
+      <div class="input-section">
+        <label for="organization" class="input-label">What type of entity is your organization?</label>
+        <select id="organization" class="dropdown">
           <option value="">Select</option>
           <option value="government">Government</option>
           <option value="nonprofit">Non-Profit</option>
           <option value="other">Other</option>
         </select>
       </div>
-      <div class="form-group">
-        <label>Is the proposed private forest land at least five (5) acres in size?</label>
-        <div class="radio-group">
-          <input type="radio" id="fiveAcresYes" name="fiveAcres" value="yes">
-          <label for="fiveAcresYes">Yes</label>
-          <input type="radio" id="fiveAcresNo" name="fiveAcres" value="no">
-          <label for="fiveAcresNo">No</label>
+
+      <div class="input-section">
+        <label class="input-label">Is the proposed private forest land at least five (5) acres in size?</label>
+        <div class="radio-options">
+          <input type="radio" id="fiveYes" name="fiveAcres" value="yes">
+          <label for="fiveYes" class="radio-label">Yes</label>
+          <input type="radio" id="fiveNo" name="fiveAcres" value="no">
+          <label for="fiveNo" class="radio-label">No</label>
         </div>
       </div>
-      <div class="form-group">
-        <label>Is the proposed private forest land suitable to sustain natural vegetation?</label>
-        <div class="radio-group">
+
+      <div class="input-section">
+        <label class="input-label">Is the proposed private forest land suitable to sustain natural vegetation?</label>
+        <div class="radio-options">
           <input type="radio" id="naturalYes" name="natural" value="yes">
-          <label for="naturalYes">Yes</label>
+          <label for="naturalYes" class="radio-label">Yes</label>
           <input type="radio" id="naturalNo" name="natural" value="no">
-          <label for="naturalNo">No</label>
+          <label for="naturalNo" class="radio-label">No</label>
         </div>
       </div>
-      <div class="form-group">
-        <label>Is the proposed private forest land at least 75% forested?</label>
-        <div class="radio-group">
-          <input type="radio" id="forestYes" name="forest" value="yes">
-          <label for="forestYes">Yes</label>
-          <input type="radio" id="forestNo" name="forest" value="no">
-          <label for="forestNo">No</label>
+
+      <div class="input-section">
+        <label class="input-label">Is the proposed private forest land at least 75% forested?</label>
+        <div class="radio-options">
+          <input type="radio" id="forestedYes" name="forested" value="yes">
+          <label for="forestedYes" class="radio-label">Yes</label>
+          <input type="radio" id="forestedNo" name="forested" value="no">
+          <label for="forestedNo" class="radio-label">No</label>
         </div>
       </div>
-      <div class="form-group">
-        <label>Is the proposed private forest land threatened by conversion to non-forest uses?</label>
-        <div class="radio-group">
+
+      <div class="input-section">
+        <label class="input-label">Is the proposed private forest land threatened by conversion to non-forest uses?</label>
+        <div class="radio-options">
           <input type="radio" id="conversionYes" name="conversion" value="yes">
-          <label for="conversionYes">Yes</label>
+          <label for="conversionYes" class="radio-label">Yes</label>
           <input type="radio" id="conversionNo" name="conversion" value="no">
-          <label for="conversionNo">No</label>
+          <label for="conversionNo" class="radio-label">No</label>
         </div>
       </div>
-      <div class="form-group">
-        <label>Is the proposed private forest land held in trust by the United States on behalf of any Indian Tribe and not Tribal allotment lands?</label>
-        <div class="radio-group">
+
+      <div class="input-section">
+        <label class="input-label">Is the proposed private forest land held in trust by the United States on behalf of any Indian Tribe and not Tribal allotment lands?</label>
+        <div class="radio-options">
           <input type="radio" id="trustYes" name="trust" value="yes">
-          <label for="trustYes">Yes</label>
+          <label for="trustYes" class="radio-label">Yes</label>
           <input type="radio" id="trustNo" name="trust" value="no">
-          <label for="trustNo">No</label>
+          <label for="trustNo" class="radio-label">No</label>
         </div>
       </div>
-      <div class="form-group">
-        <label>Is the proposed private forest land offered for sale by a willing seller?</label>
-        <div class="radio-group">
+
+      <div class="input-section">
+        <label class="input-label">Is the proposed private forest land offered for sale by a willing seller?</label>
+        <div class="radio-options">
           <input type="radio" id="sellerYes" name="seller" value="yes">
-          <label for="sellerYes">Yes</label>
+          <label for="sellerYes" class="radio-label">Yes</label>
           <input type="radio" id="sellerNo" name="seller" value="no">
-          <label for="sellerNo">No</label>
+          <label for="sellerNo" class="radio-label">No</label>
         </div>
       </div>
-      <div class="form-footer">
-        <button type="submit" class="btn">Continue</button>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-submit">Continue</button>
       </div>
     </form>
   </div>
 </body>
 </html>
-
 <style>
     body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #f3f4f6;
     margin: 0;
     padding: 0;
   }
   
-  .container {
-    width: 60%;
-    margin: 20px auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .form-wrapper {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
   }
   
-  .header h1 {
+  .form-heading {
     font-size: 24px;
-    color: #2e7d32;
+    color: #00703c;
+    margin-bottom: 15px;
+    text-align: center;
   }
   
-  .header p {
+  .form-intro {
     font-size: 14px;
     margin-bottom: 20px;
+    color: #333333;
   }
   
-  .header a {
-    color: #2e7d32;
+  .hyperlink {
+    color: #00703c;
     text-decoration: underline;
+    font-weight: bold;
   }
   
-  .form-group {
+  .input-section {
     margin-bottom: 20px;
   }
   
-  .form-group label {
+  .input-label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
@@ -134,34 +144,43 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
   }
   
-  .radio-group {
+  .radio-options {
     display: flex;
     gap: 10px;
     align-items: center;
   }
   
-  .radio-group label {
+  .radio-label {
     margin-right: 15px;
     font-weight: normal;
   }
   
-  .btn {
-    display: inline-block;
-    background-color: #2e7d32;
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #00703c;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
-  .btn:hover {
-    background-color: #245a26;
+  .btn-submit:hover {
+    background-color: #005a2b;
   }
   
-  .form-footer {
+  .form-actions {
     text-align: right;
   }
   
