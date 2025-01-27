@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Forest Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Community Forest and Open Space Conservation Program Application</h1>
+      <p>
+        Verify if the proposed private forest land project is eligible for funding. If you have any questions, please contact your 
+        <a href="#">Regional Program Manager</a> or refer to the <a href="#">Final Rule (PDF)</a>.
+      </p>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="entityType">What type of entity is your organization?</label>
+        <select id="entityType" class="dropdown">
+          <option value="">Select</option>
+          <option value="government">Government</option>
+          <option value="nonprofit">Non-Profit</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Is the proposed private forest land at least five (5) acres in size?</label>
+        <div class="radio-group">
+          <input type="radio" id="fiveAcresYes" name="fiveAcres" value="yes">
+          <label for="fiveAcresYes">Yes</label>
+          <input type="radio" id="fiveAcresNo" name="fiveAcres" value="no">
+          <label for="fiveAcresNo">No</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Is the proposed private forest land suitable to sustain natural vegetation?</label>
+        <div class="radio-group">
+          <input type="radio" id="naturalYes" name="natural" value="yes">
+          <label for="naturalYes">Yes</label>
+          <input type="radio" id="naturalNo" name="natural" value="no">
+          <label for="naturalNo">No</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Is the proposed private forest land at least 75% forested?</label>
+        <div class="radio-group">
+          <input type="radio" id="forestYes" name="forest" value="yes">
+          <label for="forestYes">Yes</label>
+          <input type="radio" id="forestNo" name="forest" value="no">
+          <label for="forestNo">No</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Is the proposed private forest land threatened by conversion to non-forest uses?</label>
+        <div class="radio-group">
+          <input type="radio" id="conversionYes" name="conversion" value="yes">
+          <label for="conversionYes">Yes</label>
+          <input type="radio" id="conversionNo" name="conversion" value="no">
+          <label for="conversionNo">No</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Is the proposed private forest land held in trust by the United States on behalf of any Indian Tribe and not Tribal allotment lands?</label>
+        <div class="radio-group">
+          <input type="radio" id="trustYes" name="trust" value="yes">
+          <label for="trustYes">Yes</label>
+          <input type="radio" id="trustNo" name="trust" value="no">
+          <label for="trustNo">No</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Is the proposed private forest land offered for sale by a willing seller?</label>
+        <div class="radio-group">
+          <input type="radio" id="sellerYes" name="seller" value="yes">
+          <label for="sellerYes">Yes</label>
+          <input type="radio" id="sellerNo" name="seller" value="no">
+          <label for="sellerNo">No</label>
+        </div>
+      </div>
+      <div class="form-footer">
+        <button type="submit" class="btn">Continue</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 60%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #2e7d32;
+  }
+  
+  .header p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .header a {
+    color: #2e7d32;
+    text-decoration: underline;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .radio-group label {
+    margin-right: 15px;
+    font-weight: normal;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #245a26;
+  }
+  
+  .form-footer {
+    text-align: right;
+  }
+  
+</style>
