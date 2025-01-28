@@ -1,0 +1,88 @@
+<div class="input-sectiond">
+    <label for="organization" class="input-labeld">
+      *What type of entity is your organization?
+    </label>
+    <div class="custom-dropdown">
+      <div class="selected-option" id="selected-option">Select</div>
+      <ul class="dropdown-options" id="dropdown-options">
+        <li data-value="government">Local Government</li>
+        <li data-value="nonprofit">Qualified Conservation Non-Profit Organization</li>
+        <li data-value="other">Federally Recognized Indian Tribe</li>
+      </ul>
+    </div>
+  </div>
+  
+
+ <style>
+  .input-sectiond {
+    width: 300px; /* Adjust as needed */
+  }
+  
+  .custom-dropdown {
+    position: relative;
+    width: 100%;
+  }
+  
+  .selected-option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .dropdown-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+    z-index: 1000;
+  }
+  
+  .dropdown-options li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .dropdown-options li:hover {
+    background-color: #DEE9CE; /* Light green hover color */
+  }
+  
+  .dropdown-options li:active {
+    background-color: #c6d8a7; /* Darker green for active click */
+  }
+  
+</style> 
+  
+<script>
+
+  const selectedOption = document.getElementById('selected-option');
+const dropdownOptions = document.getElementById('dropdown-options');
+
+selectedOption.addEventListener('click', () => {
+  dropdownOptions.style.display =
+    dropdownOptions.style.display === 'block' ? 'none' : 'block';
+});
+
+dropdownOptions.addEventListener('click', (event) => {
+  if (event.target.tagName === 'LI') {
+    selectedOption.textContent = event.target.textContent;
+    selectedOption.setAttribute('data-value', event.target.getAttribute('data-value'));
+    dropdownOptions.style.display = 'none';
+  }
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.custom-dropdown')) {
+    dropdownOptions.style.display = 'none';
+  }
+});
+</script>

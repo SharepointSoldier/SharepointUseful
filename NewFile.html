@@ -305,6 +305,64 @@
     outline: 2px solid #f2c94c; /* Yellow outline for accessibility */
   }
    
+
+
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c6118; /* Green background */
+    background-image: url('pattern.png'); /* Optional: Add pattern if required */
+    padding: 20px 30px;
+    color: white;
+  }
+   
+  .header-left {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .new-proposal {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 50px;
+  }
+   
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: white;
+    margin-left: 50px;
+  }
+   
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+   
+  .save-draft {
+    background-color: #f7a90a; /* Yellow button */
+    color:black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+   
+  .save-draft:hover {
+    background-color: #e69500; /* Slightly darker yellow on hover */
+  }
+
+
+
+  
 </style>
 <script>
     document.getElementById('continueButton').addEventListener('click', function() {
