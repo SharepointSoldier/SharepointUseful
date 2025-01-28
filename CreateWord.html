@@ -1,0 +1,67 @@
+<div class="input-section">
+    <label class="input-label">
+      Is the proposed private forest land held in trust by the United States on behalf of any Indian Tribe and not tribal allotment lands?
+    </label>
+    <div class="radio-options">
+      <input type="radio" id="trustYes" name="trust" value="yes">
+      <label for="trustYes" class="radio-label">Yes</label>
+  
+      <input type="radio" id="trustNo" name="trust" value="no">
+      <label for="trustNo" class="radio-label">No</label>
+    </div>
+  </div>
+
+
+  <style>
+    .input-section {
+    margin-bottom: 20px;
+  }
+  
+  .radio-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  /* Default radio button styling */
+  input[type="radio"] {
+    appearance: none; /* Remove default */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+  }
+  
+  /* Custom styling for checked radio button */
+  input[type="radio"]:checked {
+    border: 2px solid #538200; /* Outer border */
+    background-color: white;
+    position: relative;
+  }
+  
+  /* Inner dot */
+  input[type="radio"]:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #538200;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Add underline for selected radio label */
+  input[type="radio"]:checked + .radio-label {
+    text-decoration: underline;
+    text-decoration-color: #538200;
+    text-underline-offset: 3px;
+    font-weight: bold;
+  }
+  
+  </style>
