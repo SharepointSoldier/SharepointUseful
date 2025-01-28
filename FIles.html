@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Land Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+<div class="container">
+    <h2>Forest Land Eligibility Form</h2>
+ 
+    <div class="input-section">
+        <label class="input-label">1. What type of entity is your organization?</label>
+        <select class="dropdown">
+            <option>Qualified conservation non-profit organization</option>
+        </select>
+    </div>
+ 
+    <div class="input-section">
+        <label class="input-label">2. Is the proposed private forest land at least five (5) acres in size?</label>
+        <div class="radio-options">
+            <input type="radio" id="fiveYes" name="fiveAcres" value="yes">
+            <label for="fiveYes" class="radio-label">Yes</label>
+            <input type="radio" id="fiveNo" name="fiveAcres" value="no">
+            <label for="fiveNo" class="radio-label">No</label>
+        </div>
+    </div>
+ 
+    <div class="input-section">
+        <label class="input-label">3. Is the proposed private forest land suitable to sustain natural vegetation?</label>
+        <div class="radio-options">
+            <input type="radio" id="naturalYes" name="natural" value="yes">
+            <label for="naturalYes" class="radio-label">Yes</label>
+            <input type="radio" id="naturalNo" name="natural" value="no">
+            <label for="naturalNo" class="radio-label">No</label>
+        </div>
+    </div>
+ 
+    <div class="input-section">
+        <label class="input-label">4. Is the proposed private forest land at least 75% forested?</label>
+        <div class="radio-options">
+            <input type="radio" id="forestedYes" name="forested" value="yes">
+            <label for="forestedYes" class="radio-label">Yes</label>
+            <input type="radio" id="forestedNo" name="forested" value="no">
+            <label for="forestedNo" class="radio-label">No</label>
+        </div>
+    </div>
+ 
+    <div class="input-section">
+        <label class="input-label">5. Is the proposed private forest land threatened by conversion to non-forest uses?</label>
+        <div class="radio-options">
+            <input type="radio" id="conversionYes" name="conversion" value="yes">
+            <label for="conversionYes" class="radio-label">Yes</label>
+            <input type="radio" id="conversionNo" name="conversion" value="no">
+            <label for="conversionNo" class="radio-label">No</label>
+        </div>
+    </div>
+ 
+    <div class="input-section">
+        <label class="input-label">6. Is the proposed private forest land held in trust by the United States on behalf of any Indian Tribe and not Tribal allotment lands?</label>
+        <div class="radio-options">
+            <input type="radio" id="trustYes" name="trust" value="yes">
+            <label for="trustYes" class="radio-label">Yes</label>
+            <input type="radio" id="trustNo" name="trust" value="no">
+            <label for="trustNo" class="radio-label">No</label>
+        </div>
+    </div>
+ 
+    <div class="input-section">
+        <label class="input-label">7. Is the proposed private forest land offered for sale by a willing seller?</label>
+        <div class="radio-options">
+            <input type="radio" id="sellerYes" name="seller" value="yes">
+            <label for="sellerYes" class="radio-label">Yes</label>
+            <input type="radio" id="sellerNo" name="seller" value="no">
+            <label for="sellerNo" class="radio-label">No</label>
+        </div>
+    </div>
+ 
+    <div class="input-section">
+        <label class="input-label">8. Will the proposed private forest land have public access?</label>
+        <div class="radio-options">
+            <input type="radio" id="accessYes" name="access" value="yes">
+            <label for="accessYes" class="radio-label">Yes</label>
+            <input type="radio" id="accessNo" name="access" value="no">
+            <label for="accessNo" class="radio-label">No</label>
+        </div>
+    </div>
+ 
+    <div class="input-section">
+        <label class="input-label">9. Is the proposed private forest land currently in consideration for the Forest Legacy Program?</label>
+        <div class="radio-options">
+            <input type="radio" id="legacyYes" name="legacy" value="yes">
+            <label for="legacyYes" class="radio-label">Yes</label>
+            <input type="radio" id="legacyNo" name="legacy" value="no">
+            <label for="legacyNo" class="radio-label">No</label>
+        </div>
+    </div>
+ 
+    <div class="input-section">
+        <label class="input-label">10. Is the private forest land proposed for acquisition currently in private ownership?</label>
+        <div class="radio-options">
+            <input type="radio" id="ownershipYes" name="ownership" value="yes">
+            <label for="ownershipYes" class="radio-label">Yes</label>
+            <input type="radio" id="ownershipNo" name="ownership" value="no">
+            <label for="ownershipNo" class="radio-label">No</label>
+        </div>
+    </div>
+ 
+    <div class="input-section">
+        <label class="input-label">11. Is the private forest land currently owned by the entity that is applying for CFP funds?</label>
+        <div class="radio-options">
+            <input type="radio" id="cfpYes" name="cfp" value="yes">
+            <label for="cfpYes" class="radio-label">Yes</label>
+            <input type="radio" id="cfpNo" name="cfp" value="no">
+            <label for="cfpNo" class="radio-label">No</label>
+        </div>
+    </div>
+</div>
+ 
+<script src="script.js"></script>
+ 
+</body>
+</html>
+
+<script>
+       document.getElementById("fiveYes").addEventListener("change", function() {
+    if (this.checked) {
+        document.getElementById("naturalYes").checked = true;
+        document.getElementById("forestedYes").checked = true;
+        document.getElementById("conversionYes").checked = true;
+        document.getElementById("trustNo").checked = true;
+        document.getElementById("sellerYes").checked = true;
+        document.getElementById("accessYes").checked = true;
+        document.getElementById("legacyNo").checked = true;
+        document.getElementById("ownershipYes").checked = true;
+        document.getElementById("cfpNo").checked = true;
+    }
+  });
+
+</script>
+ 
