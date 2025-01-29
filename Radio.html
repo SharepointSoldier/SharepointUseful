@@ -1,0 +1,45 @@
+<div class="input-section">
+    <label class="input-label">10. Is the private forest land proposed for acquisition currently in private ownership?</label>
+    <div class="radio-options">
+        <input type="radio" id="ownershipYes" name="ownership" value="yes" onchange="checkSelection()">
+        <label for="ownershipYes" class="radio-label">Yes</label>
+        <input type="radio" id="ownershipNo" name="ownership" value="no" onchange="checkSelection()">
+        <label for="ownershipNo" class="radio-label">No</label>
+    </div>
+</div>
+
+<div class="input-section">
+    <label class="input-label">11. Is the private forest land currently owned by the entity that is applying for CFP funds?</label>
+    <div class="radio-options">
+        <input type="radio" id="cfpYes" name="cfp" value="yes" onchange="checkSelection()">
+        <label for="cfpYes" class="radio-label">Yes</label>
+        <input type="radio" id="cfpNo" name="cfp" value="no" onchange="checkSelection()">
+        <label for="cfpNo" class="radio-label">No</label>
+    </div>
+</div>
+
+<div class="footer-options">
+    <button id="continueButton" class="continue-btn" disabled>Continue <i class="fa fa-chevron-right"></i></button>
+</div>
+
+<script>
+    function checkSelection() {
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+        const continueButton = document.getElementById("continueButton");
+
+        let isSelected = false;
+        radioButtons.forEach(radio => {
+            if (radio.checked) {
+                isSelected = true;
+            }
+        });
+
+        if (isSelected) {
+            continueButton.removeAttribute("disabled");
+            continueButton.style.backgroundColor = "#216E1F"; // Green
+        } else {
+            continueButton.setAttribute("disabled", "true");
+            continueButton.style.backgroundColor = "gray";
+        }
+    }
+</script>
