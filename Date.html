@@ -1,0 +1,26 @@
+{% fetchxml submissionDeadline %}
+<fetch top="1">
+  <entity name="siteconfiguration">
+    <attribute name="date" />
+    <order attribute="date" descending="true" />
+  </entity>
+</fetch>
+{% endfetchxml %}
+
+
+<div class="custom-overlay-box">
+    <h1 class="custom-main-title">Community Forest and Open Space Conservation Program</h1>
+    <h2 class="custom-subtitle">Fiscal Year {{ submissionDeadline.entities[0].date | date: "%Y" }} Requests for Applications are now open.</h2>
+    
+    <div class="custom-button-row">
+      <a href="https://fs-cwdev.powerappsportals.us/proposals/submitapplication/" target="_blank" class="custom-action-button">
+        <strong>Create New Proposal</strong>
+      </a>
+      <span class="calendar-icon"><i class="fas fa-calendar"></i></span>
+    </div>
+  
+    <h3 class="custom-additional-title">
+      SUBMISSION DEADLINE {{ submissionDeadline.entities[0].date | date: "%B %d, %Y" }}
+    </h3>
+  </div>
+  
