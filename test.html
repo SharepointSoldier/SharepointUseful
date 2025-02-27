@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .custom-table {
+      width: 70%;
+      border-collapse: collapse;
+      border: 2px solid black;
+      text-align: left;
+      margin: 20px 0;
+    }
+
+    /* Table Header */
+    .custom-table th {
+      border: 2px solid black;
+      background-color: #0073e6;
+      color: white;
+      font-weight: bold;
+      padding: 12px;
+      text-align: center;
+    }
+
+    /* Table Data */
+    .custom-table td {
+      border: 2px solid black;
+      padding: 10px;
+      text-align: left;
+      background-color: #f9f9f9;
+    }
+
+    /* Link Styling */
+    .custom-table a {
+      color: blue;
+      text-decoration: none;
+    }
+    
+    .custom-table a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    You have pending approvals in the Initiative. Please review and take action at your earliest convenience.
+  </p>
+  
+  <table class="custom-table">
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Link</th>
+    </tr>
+    <tr>
+      <td>@{items('Apply_to_each_5')?['InitiativeID/Id']}</td>
+      <td>@{items('Apply_to_each_5')?['InitiativeID_x003a__x0020_Titre/Value']}</td>
+      <td>
+        <a href="https://yourlink.com/initiative/@{items('Apply_to_each_5')?['InitiativeID/Id']}" target="_blank">
+          Click here to view Initiative #@{items('Apply_to_each_5')?['InitiativeID/Id']}
+        </a>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
