@@ -1,0 +1,23 @@
+let
+    siteURL = "https://doj365.sharepoint.us/sites/USMS-OPR-SAG/",
+    listGUID = "73aeec55-9203-4d9a-871d-370d6b8ff1b1",
+    pageSize = 5000,
+    baseURL = siteURL & "_api/web/lists(guid'" & listGUID & "')/items?$top=" & Text.From(pageSize),
+ 
+    GetData = (url) =>
+        let
+            data = OData.Feed(url, null, [Implementation="2.0"]),
+            nextLink = try data[#"@odata.nextLink"] otherwise null,
+            items = try data[Value] otherwise data
+        in
+            if nextLink <> null then
+                items & @GetData(nextLink)
+            else
+                items,
+ 
+    FullData = GetData(baseURL),
+    ExpandedTable = Table.ExpandListColumn(Table.FromRecords(FullData), "FiscalYear"),
+    CleanedTable = Table.RemoveColumns(ExpandedTable, {"Edit", "Type", "Item Child Count", "Folder Child Count", "Label"})
+ 
+in
+    CleanedTable
